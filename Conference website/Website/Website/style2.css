@@ -1,0 +1,106 @@
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff6b35 0%, #ffd700 100%);
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .committee-section {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .committee-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6b35;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ff6b35;
+        }
+
+        .committee-members {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .member {
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .member-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .member-role {
+            font-weight: bold;
+            color: #666;
+        }
+
+        .member-affiliation {
+            color: #666;
+        }
+
+        .decorative-border {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 300px;
+            height: 300px;
+            background-image: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+                            linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+                            linear-gradient(45deg, transparent 75%, rgba(255,255,255,0.1) 75%),
+                            linear-gradient(-45deg, transparent 75%, rgba(255,255,255,0.1) 75%);
+            background-size: 20px 20px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .page-footer {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: left;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .committee-section {
+                padding: 15px;
+            }
+
+            .committee-title {
+                font-size: 20px;
+            }
+
+            .decorative-border {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
